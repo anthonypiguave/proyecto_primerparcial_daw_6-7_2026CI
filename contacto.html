@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratar al Transportador - Contacto</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <header id="encabezado">
+        <h1>¿Tienes un paquete que enviar?</h1>
+        <p>Completa el formulario confidencial para cotizar un traslado sin preguntas</p>
+    </header>
+
+    <nav class="navegacion-principal">
+        <a href="index.html">Inicio</a>
+        <a href="personajes.html">Personajes y Reglas</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+
+    <main class="contenedor">
+        <section class="seccion">
+            <h2>Formulario de Solicitud de Servicio</h2>
+            <form id="formulario-contacto" class="formulario" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre / Alias:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre confidencial">
+                    <span class="error-mensaje" id="error-nombre"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo de Contacto Encritado:</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+                    <span class="error-mensaje" id="error-email"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Detalles del Traslado (Sin violar la regla #3):</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Especifica peso aproximado, origen y destino..."></textarea>
+                    <span class="error-mensaje" id="error-mensaje-txt"></span>
+                </div>
+
+                <div class="u-centrar">
+                    <button type="submit" class="enlace btn-enviar">Enviar Solicitud</button>
+                </div>
+                <div id="exito-formulario" class="alerta-exito"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 - Proyecto DAW.</p>
+    </footer>
+
+    <script src="js/validacion.js"></script>
+</body>
+</html>

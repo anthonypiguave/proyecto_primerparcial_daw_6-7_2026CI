@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Transportador - Inicio</title>
+    <link rel="preload" href="css/normalize.css" as="style"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <header id="encabezado">
+        <h1>El Transportador</h1>
+        <p>Película favorita de acción protagonizada por Jason Statham</p>
+    </header>
+
+    <nav class="navegacion-principal">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="personajes.html">Personajes y Reglas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section class="hero">
+    </section>
+
+    <main class="contenedor">
+        <div class="grid-contenido">
+            <section class="seccion">
+                <h2>Descripción</h2>
+                <p>El Transportador es una película de acción en la que Frank Martin, un conductor profesional, acepta trabajos de transporte bajo reglas muy estrictas.</p>
+                <p>Todo cambia cuando uno de sus encargos lo involucra en una peligrosa red criminal.</p>
+                <p>La cinta destaca por sus escenas de combate, persecuciones y estilo visual intenso.</p>
+            </section>
+
+            <section class="seccion">
+                <h2>Datos Importantes</h2>
+                <ul class="datos">
+                    <li><strong>Género:</strong> Acción, crimen, thriller.</li>
+                    <li><strong>Año de estreno:</strong> 2002.</li>
+                    <li><strong>Director:</strong> Louis Leterrier y Corey Yuen.</li>
+                    <li><strong>Actor principal:</strong> Jason Statham.</li>
+                    <li><strong>Duración:</strong> 1 hora y 32 minutos.</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="seccion carrusel-contenedor">
+            <h2>Galería de Acción</h2>
+                <div class="carrusel">
+                        
+                        <div class="slide fade">
+                            <img src="imagenes/hq720.png" alt="Frank Martin - El Transportador">
+                        </div>
+
+                        <div class="slide fade">
+                            <img src="imagenes/slider1.jpg" alt="Escena de Acción 1">
+                        </div>
+                        
+                        <div class="slide fade">
+                            <img src="imagenes/slider2.jpg" alt="Escena de Acción 2">
+                        </div>
+                        
+                        <a class="prev" onclick="cambiarSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="cambiarSlide(1)">&#10095;</a>
+                </div>
+            </section>
+
+        <section class="seccion u-centrar">
+            <h2>Fuentes relacionadas</h2>
+            <a class="enlace" href="https://www.imdb.com/title/tt0293662/" target="_blank">Ver ficha de The Transporter en IMDb</a>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 - Proyecto DAW.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
